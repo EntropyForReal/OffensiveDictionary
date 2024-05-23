@@ -1,0 +1,123 @@
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.logo-part {
+    font-weight: bold;
+    color: #4285f4;
+}
+
+.translation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+}
+
+label span {
+    position: relative;
+    color: #4285f4;
+}
+
+label span::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-radius: 1px 1px 0 0;
+    background: #4285f4;
+}
+
+.right-label {
+    text-align: right;
+}
+
+.right-label span {
+    color: black;
+}
+
+.right-label span::after {
+    background: black;
+}
+
+textarea {
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f5f5f5;
+    resize: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+}
+
+.char-count {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #4285f4;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+    flex: 1;
+}
+
+button:hover {
+    background: #357ae8;
+}
